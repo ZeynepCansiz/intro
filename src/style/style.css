@@ -1,0 +1,106 @@
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.card {
+    box-shadow: -1px 5px 12px 5px rgba(255, 255, 255, 0.5); /* Değişiklikler burada */
+  }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  
+.left, .right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+.left {
+    background-color: "#FFFBEB";
+    clip-path: polygon(10 0, 50% 0, 100% 100%, 0 100%);
+}
+  
+.right {
+    background-color: #FEF3C7;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+    flex: 1;
+}
+.square-container {
+    position: relative;  /* Enable relative positioning for child elements */
+    width: 100%;  /* Make container responsive (full width) */
+    height: 0;  /* Maintain aspect ratio for container (optional) */
+    padding-bottom: 100%;  /* Match aspect ratio of square (optional) */
+  }
+  
+.square {
+    width: 300px;  /* Responsive width (adjust as needed) */
+    height: 300px;  /* Responsive height (adjust as needed) */
+    background-color: #FBBF24;
+    border: 10px solid #FBBF24;
+    border-radius: 10%;
+    position: absolute;  /* Absolute positioning for precise layout */
+    top: -18%;  /* Position at bottom of container */
+    right: 15%;  /* Position at right side of container */
+    z-index: 1;
+  }
+  
+.square-img {
+    width: 486px;  /* Fill available space within square */
+    height: 388px;
+    object-fit: cover;  /* Resize image to fill container */
+    position: absolute;  /* Absolute positioning for layering */
+    top: -25%;  /* Position at top of square */
+    right: 8%;  /* Position at left side of square */
+    z-index: 2;  /* Ensure image appears on top of square */
+  }
+  .row.zindex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cross-rectangle{
+content: "";
+  position: absolute;
+  top: 20%;
+  left: 30%;  
+  background-color:#FDE68A;
+  background-color: rgba(253, 230, 138, 1, 0.5);
+  transform: translate(-8%, -8%) rotate(140deg);
+}
+
+.cross-rectangle {
+    position: relative;
+    width: 65%;
+    height: 45%; 
+  }
+  
+  .circle {
+    position: absolute; 
+    width:4%; 
+    height: 15%; 
+    margin-left: 35%;
+    border-radius: 100%; 
+    margin-top : "10%";
+    background-color: red px; 
+  }
+  
+  .top-circle {
+    top: 10%;
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+  
+  .bottom-circle {
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  
